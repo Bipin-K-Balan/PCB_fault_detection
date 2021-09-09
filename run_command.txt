@@ -1,0 +1,6 @@
+# Just rune mapp.py from yolov5 folder
+
+#streamlit run pcb_web_interface.py
+
+
+
