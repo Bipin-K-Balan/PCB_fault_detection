@@ -16,7 +16,7 @@ We have collected image dataset of PCB by taking video using high resolution (64
 
 ## Training
 
-After several experiements with various models, we have choosed YOLO V5 since its very fast (getting 65 FPS in GPU settings) and providing 95% accuracy on test dataset and another advantage is the model size is very low where it only has 56 MB of size where other model which performing low compared to this having size more than 250 MB. Yolo V5 is came as the pytorch version introduced by Ultralytics pretrained on the COCO dataset. The training took 29 hours in Colab pro with P100 GPU and loss converged below 0.06
+After several experiements with various models, we have choosed YOLO V5 since its very fast (getting 65 FPS in GPU settings) and providing 95% accuracy on test dataset and another advantage is the model size is very low where it only has 56 MB of size where other low performing models having size more than 250 MB. Yolo V5 is came as the pytorch version introduced by Ultralytics pretrained on the COCO dataset. The training took 29 hours in Colab pro with P100 GPU and loss converged below 0.06
 
 ## Hyper parameters:
 lr0=0.01, lrf=0.2, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0
